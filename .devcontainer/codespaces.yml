@@ -20,3 +20,27 @@ services:
       - ./windows:/storage
     restart: on-failure
     stop_grace_period: 2m
+
+  # Guacamole RDP gateway — speedier alternative to noVNC.
+  # Port 8081. 24-bit color, all desktop effects, full admin access.
+  guacd:
+    container_name: guacd
+    image: guacamole/guacd:1.6.0
+    restart: on-failure
+
+  guacamole:
+    container_name: guacamole
+    image: guacamole/guacamole:1.6.0
+    depends_on:
+      - guacd
+      - windows
+    environment:
+      GUACD_HOSTNAME: guacd
+      GUACD_PORT: "4822"
+    ports:
+      - 8081:8080
+    volumes:
+      - ./.devcontainer/guacamole/guacamole.properties:/etc/guacamole/guacamole.properties:ro
+      - ./.devcontainer/guacamole/user-mapping.xml:/etc/guacamole/user-mapping.xml:ro
+      - ./.devcontainer/guacamole/extensions:/etc/guacamole/extensions:ro
+    restart: on-failure

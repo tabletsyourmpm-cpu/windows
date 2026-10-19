@@ -1,0 +1,42 @@
+<user-mapping>
+  <!--
+    Guacamole RDP gateway for the Windows VM.
+    Port 8081. Faster than noVNC, 24-bit color, all desktop effects on.
+  -->
+  <authorize username="guacadmin" password="guacadmin">
+    <connection name="Windows Desktop">
+      <protocol>rdp</protocol>
+      <param name="hostname">windows</param>
+      <param name="port">3389</param>
+      <param name="username">Docker</param>
+      <param name="password">admin</param>
+
+      <!-- 24-bit color -->
+      <param name="color-depth">24</param>
+
+      <!-- Desktop effects: everything on -->
+      <param name="enable-desktop-composition">true</param>
+      <param name="enable-font-smoothing">true</param>
+      <param name="enable-full-window-drag">true</param>
+      <param name="enable-desktop-background">true</param>
+      <param name="enable-menu-animations">true</param>
+      <param name="enable-theming">true</param>
+
+      <!-- Administrator: full access -->
+      <param name="enable-printing">true</param>
+      <param name="enable-drive">true</param>
+      <param name="drive-name">GuacDrive</param>
+      <param name="drive-path">/tmp/guac-drive</param>
+      <param name="enable-audio">true</param>
+      <param name="security">any</param>
+      <param name="ignore-cert">true</param>
+
+      <!-- Resolution lock: default 1688x950, locked (no auto-resize).
+           Overridden by the Resolution Lock extension in the Ctrl+Alt+Shift menu. -->
+      <param name="width">1688</param>
+      <param name="height">950</param>
+      <param name="dpi">96</param>
+      <param name="resize-method">none</param>
+    </connection>
+  </authorize>
+</user-mapping>
