@@ -40,7 +40,7 @@ services:
     ports:
       - 8081:8080
     volumes:
-      - ./.devcontainer/guacamole/guacamole.properties:/etc/guacamole/guacamole.properties:ro
-      - ./.devcontainer/guacamole/user-mapping.xml:/etc/guacamole/user-mapping.xml:ro
-      - ./.devcontainer/guacamole/extensions:/etc/guacamole/extensions:ro
+      - ./guacamole/guacamole.properties:/etc/guacamole/guacamole.properties:ro
+      - ./guacamole/user-mapping.xml:/etc/guacamole/user-mapping.xml:ro
+      - ./guacamole/extensions:/etc/guacamole/extensions:ro
     restart: on-failure
