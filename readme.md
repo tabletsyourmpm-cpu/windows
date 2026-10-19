@@ -109,10 +109,18 @@ For a complete graphical desktop experience, see [WinBoat](https://winboat.app),
   ```
 
   Select from the values below:
-  
+
+  **Recommended** — the front runners for speed and size:
+
   | **Value** | **Version**            | **Size** |
   |---|---|---|
   | `nano11` ⭐ | Nano 11 (recommended)     | 2.4 GB   |
+  | `ubuntu` ⭐ | Ubuntu Server 24.04 LTS   | 3.1 GB   |
+
+  **Modern Windows:**
+
+  | **Value** | **Version**            | **Size** |
+  |---|---|---|
   | `11`   | Windows 11 Pro            | 7.9 GB   |
   | `11l`  | Windows 11 LTSC           | 4.7 GB   |
   | `11e`  | Windows 11 Enterprise     | 6.6 GB   |
@@ -121,29 +129,33 @@ For a complete graphical desktop experience, see [WinBoat](https://winboat.app),
   | `10l`  | Windows 10 LTSC           | 4.6 GB   |
   | `10e`  | Windows 10 Enterprise     | 5.2 GB   |
   ||||
-  | `8e`   | Windows 8.1 Enterprise    | 3.7 GB   |
-  | `7u`   | Windows 7 Ultimate        | 3.1 GB   |
-  | `vu`   | Windows Vista Ultimate    | 3.0 GB   |
-  | `xp`   | Windows XP Professional   | 0.6 GB   |
-  | `2k`   | Windows 2000 Professional | 0.4 GB   | 
-  | `me`   | Windows ME                | 0.5 GB   |
-  | `98`   | Windows 98                | 0.7 GB   |
-  | `95`   | Windows 95                | 0.6 GB   |
-  ||||  
+  | `core11`  | Tiny11 Core      | 3.0 GB   |
+  | `tiny11`  | Tiny11           | 5.3 GB   |
+  | `tiny10`  | Tiny10           | 3.6 GB   |
+  ||||
   | `2025` | Windows Server 2025       | 7.6 GB   |
   | `2022` | Windows Server 2022       | 6.0 GB   |
   | `2019` | Windows Server 2019       | 5.3 GB   |
   | `2016` | Windows Server 2016       | 6.5 GB   |
+
+  **Legacy** — too old to be useful, kept for completeness:
+
+  | **Value** | **Version**            | **Size** |
+  |---|---|---|
+  | `8e`   | Windows 8.1 Enterprise    | 3.7 GB   |
+  | `7u`   | Windows 7 Ultimate        | 3.1 GB   |
+  | `vu`   | Windows Vista Ultimate    | 3.0 GB   |
+  | `xp`   | Windows XP Professional   | 0.6 GB   |
+  | `2k`   | Windows 2000 Professional | 0.4 GB   |
+  | `me`   | Windows ME                | 0.5 GB   |
+  | `98`   | Windows 98                | 0.7 GB   |
+  | `95`   | Windows 95                | 0.6 GB   |
+  ||||
   | `2012` | Windows Server 2012       | 4.3 GB   |
   | `2008` | Windows Server 2008       | 3.0 GB   |
   | `2003` | Windows Server 2003       | 0.6 GB   |
-  ||||  
-  | `core11`  | Tiny11 Core      | 3.0 GB   |
-  | `tiny11`  | Tiny11           | 5.3 GB   |
-  | `tiny10`  | Tiny10           | 3.6 GB   |
-  | `reactos` | ReactOS          | 0.1 GB   |
   ||||
-  | `ubuntu`  | Ubuntu Server 24.04 LTS | 3.1 GB |
+  | `reactos` | ReactOS               | 0.1 GB   |
 
 > [!TIP]
 > To install ARM64 versions of Windows use [dockur/windows-arm](https://github.com/dockur/windows-arm/).
