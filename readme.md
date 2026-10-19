@@ -112,6 +112,7 @@ For a complete graphical desktop experience, see [WinBoat](https://winboat.app),
   
   | **Value** | **Version**            | **Size** |
   |---|---|---|
+  | `nano11` ⭐ | Nano 11 (recommended)     | 2.4 GB   |
   | `11`   | Windows 11 Pro            | 7.9 GB   |
   | `11l`  | Windows 11 LTSC           | 4.7 GB   |
   | `11e`  | Windows 11 Enterprise     | 6.6 GB   |
@@ -141,6 +142,8 @@ For a complete graphical desktop experience, see [WinBoat](https://winboat.app),
   | `tiny11`  | Tiny11           | 5.3 GB   |
   | `tiny10`  | Tiny10           | 3.6 GB   |
   | `reactos` | ReactOS          | 0.1 GB   |
+  ||||
+  | `ubuntu`  | Ubuntu Server 24.04 LTS | 3.1 GB |
 
 > [!TIP]
 > To install ARM64 versions of Windows use [dockur/windows-arm](https://github.com/dockur/windows-arm/).

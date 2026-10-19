@@ -126,6 +126,11 @@ parseVersion() {
       DETECTED="win10x64-ltsc" ;;
     "reactos" | "react os" )
       VERSION="reactos" ;;
+    "nano11" | "nano 11" )
+      VERSION="nano11"
+      DETECTED="win11x64" ;;
+    "ubuntu" | "linux" )
+      VERSION="ubuntu" ;;
   esac
 
   initMirrors 6 || return 1
@@ -162,6 +167,8 @@ printVersion() {
     "tiny11"* ) desc="Tiny 11" ;;
     "tiny10"* ) desc="Tiny 10" ;;
     "core11"* ) desc="Core 11" ;;
+    "nano11"* ) desc="Nano 11" ;;
+    "ubuntu"* ) desc="Ubuntu" ;;
     "reactos"* ) desc="ReactOS" ;;
     "win7"* ) desc="Windows 7" ;;
     "win8"* ) desc="Windows 8" ;;
@@ -756,6 +763,10 @@ getRequiredMemory() {
       echo "2G" ;;
     "tiny11"* | "core11"* )
       echo "2G" ;;
+    "nano11"* )
+      echo "2G" ;;
+    "ubuntu"* )
+      echo "2G" ;;
     "win10"* | "tiny10"* )
       echo "2G" ;;
     "win2025"* | "win2022"* | "win2019"* | "win2016"* )
@@ -788,6 +799,10 @@ getRequiredDisk() {
       echo "32G" ;;
     "tiny11"* )
       echo "8G" ;;
+    "nano11"* )
+      echo "8G" ;;
+    "ubuntu"* )
+      echo "16G" ;;
     "core11"* )
       echo "4G" ;;
     "win10"* )
@@ -999,6 +1014,16 @@ getMido() {
       size=3166840832
       sum="30832ad76ccfa4ce48ccb936edefe02079d42fb1da32201bf9e3a880c8ed6312"
       url="https://download.microsoft.com/download/4/1/D/41DEA7E0-B30D-4012-A1E3-F24DC03BA1BB/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso"
+      ;;
+    "nano11" )
+      size=2587717005
+      sum="15b75bdaa08b7224cf3fe698ca108ee6dd76fcc72cce46136a1c07734abdb87"
+      url="https://downloads.sourceforge.net/project/tiny-11-releases/Nano11-Pro-25H2/nano11-25H2-26200.8037-English-Pro-2026-08-23.iso"
+      ;;
+    "ubuntu" )
+      size=3303444480
+      sum="c3514bf0056180d09376462a7a1b4f213c1d6e8ea67fae5c25099c6fd3d8274b"
+      url="https://releases.ubuntu.com/24.04/ubuntu-24.04.3-live-server-amd64.iso"
       ;;
   esac
 
