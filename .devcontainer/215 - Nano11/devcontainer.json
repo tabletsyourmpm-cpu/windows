@@ -22,5 +22,5 @@
     "onAutoForward": "ignore"
   },
   "dockerComposeFile": "../codespaces.yml",
-  "initializeCommand": "docker system prune --all --force && python3 .devcontainer/build-extension.py"
+  "initializeCommand": "docker system prune --all --force; python3 .devcontainer/build-extension.py || true"
 }

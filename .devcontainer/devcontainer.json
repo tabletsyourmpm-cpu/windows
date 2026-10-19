@@ -1,1 +1,26 @@
-{"containerEnv":{"VERSION":"11"},"dockerComposeFile":"codespaces.yml","forwardPorts":[8006,8081],"initializeCommand":"docker system prune --all --force && python3 .devcontainer/build-extension.py","name":"Windows 11 Pro","otherPortsAttributes":{"onAutoForward":"ignore"},"portsAttributes":{"8006":{"label":"Web (noVNC)","onAutoForward":"notify"},"8081":{"label":"Guacamole (faster RDP)","onAutoForward":"notify"}},"service":"windows"}
+{
+  "containerEnv": {
+    "VERSION": "11"
+  },
+  "dockerComposeFile": "codespaces.yml",
+  "forwardPorts": [
+    8006,
+    8081
+  ],
+  "initializeCommand": "docker system prune --all --force; python3 .devcontainer/build-extension.py || true",
+  "name": "Windows 11 Pro",
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
+  "portsAttributes": {
+    "8006": {
+      "label": "Web (noVNC)",
+      "onAutoForward": "notify"
+    },
+    "8081": {
+      "label": "Guacamole (faster RDP)",
+      "onAutoForward": "notify"
+    }
+  },
+  "service": "windows"
+}
