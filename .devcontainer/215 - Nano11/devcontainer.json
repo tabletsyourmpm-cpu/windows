@@ -1,0 +1,26 @@
+{
+  "name": "Nano11",
+  "service": "windows",
+  "containerEnv": {
+    "VERSION": "nano11"
+  },
+  "forwardPorts": [
+    8006,
+    8081
+  ],
+  "portsAttributes": {
+    "8006": {
+      "label": "Web (noVNC)",
+      "onAutoForward": "notify"
+    },
+    "8081": {
+      "label": "Guacamole (faster RDP)",
+      "onAutoForward": "notify"
+    }
+  },
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
+  "dockerComposeFile": "../codespaces.yml",
+  "initializeCommand": "docker system prune --all --force && python3 .devcontainer/build-extension.py"
+}
