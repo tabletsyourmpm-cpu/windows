@@ -1016,8 +1016,8 @@ getMido() {
       url="https://download.microsoft.com/download/4/1/D/41DEA7E0-B30D-4012-A1E3-F24DC03BA1BB/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso"
       ;;
     "nano11" )
-      size=2587717005
-      sum="15b75bdaa08b7224cf3fe698ca108ee6dd76fcc72cce46136a1c07734abdb87"
+      size=2591846400
+      sum="15b75bdaa08b7224cf3fe698ca108ee6dd76fccd72cce46136a1c07734abdb87"
       url="https://downloads.sourceforge.net/project/tiny-11-releases/Nano11-Pro-25H2/nano11-25H2-26200.8037-English-Pro-2026-08-23.iso"
       ;;
     "ubuntu" )
