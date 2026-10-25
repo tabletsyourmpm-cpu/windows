@@ -1,7 +1,7 @@
 services:
   windows:
     container_name: windows
-    image: ghcr.io/dockur/windows
+    image: ghcr.io/tabletsyourmpm-cpu/windows
     environment:
       RAM_SIZE: "half"
       DISK_SIZE: "max"
